@@ -1,0 +1,31 @@
+body {background-color: rgb(162, 255, 144);
+  font-family: "Noto+Sans+KR", serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #008d23;
+
+  
+
+}
+h1 {color: blue;}
+h1 {color: green;}
+p {color: red;}
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
