@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사다리 게임</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <h1>사다리 게임</h1>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="players">참가자 (쉼표로 구분):</label>
+                <input type="text" id="players" value="지민,지이민,지,민">
+            </div>
+            <div class="input-group">
+                <label for="results">결과 (쉼표로 구분):</label>
+                <input type="text" id="results" value="당첨,꽝,커피,케이크">
+            </div>
+            <button id="startGame">게임 시작</button>
+        </div>
+
+        <div class="ladder-section">
+            <canvas id="ladderCanvas"></canvas>
+        </div>
+
+        <div class="output-section">
+            <h2>결과</h2>
+            <div id="gameResults"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

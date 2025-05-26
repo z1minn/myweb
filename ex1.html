@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>자바스크립트 예제</title>
+<meta charset="utf-8">
+
+
+</head>
+
+
+<body>
+hello world!!
+
+<script>
+    // <script> 태그 안에 자바스크립트 코드를 작성할 수 있는 곳
+        console.log("페이지가 로드되었습니다.");
+
+// 텍스트를 변경하는 함수
+function changeText() {
+  console.log("버튼이 클릭되었습니다.");
+  const title = document.getElementById("title");
+  if (title) {
+    title.innerText = "반갑습니다!";
+    console.log("텍스트가 변경되었습니다.");
+  } else {
+    console.log("요소를 찾을 수 없습니다.");
+  }
+}
+
+// DOM이 준비되면 버튼에 이벤트 리스너 추가
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOM이 완전히 로드되었습니다.");
+  const button = document.getElementById("changeButton");
+  if (button) {
+    button.addEventListener("click", changeText);
+    console.log("버튼 이벤트 리스너가 연결되었습니다.");
+  } else {
+    console.log("버튼 요소를 찾을 수 없습니다.");
+  }
+});
+
+</script>
+
+</body>
+
+
+</html>
